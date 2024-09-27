@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Demande De Credit</title>
+</head>
+<body>
+  <h1 class="main-title">Demander mon crédit en ligne</h1>
+  <div>
+    <a href="">Retour</a>
+  </div>
+  <div>
+    <div class="container">   
+      <div class="row">
+        <div class="full_form">
+          <div class="step-wrapper">
+            <div class="first_step step">
+              <h2>1</h2>
+              <p>Simuler mon crédit</p>
+            </div>
+            <div class="second_step step">
+              <h2>2</h2>
+              <p>Mes coordonnées</p>
+            </div>
+            <div class="third_step step">
+              <h2>3</h2>
+              <p>Mes infos personnelles</p>
+            </div>
+          </div>
+
+          <div class="form">
+
+            <div class="input_container">
+              <div class="item">
+              <label>Mon project</label>
+              <select name="project" id="">
+                <option value="PRET_PERSONNEL">J’ai besoin d’argent</option>
+                <option value="OCCASION">Je finance mon véhicule d’occasion</option>
+                <option value="REV">Je Gère mes imprévus</option>
+                <option value="CREDIT_AUTOMOBILE">Je finance mon véhicule neuf</option>
+                <option value="CREDIT_MENAGE">J’équipe ma maison</option>
+              </select>
+              </div>
+
+              <div class="item">
+                <label>Je suis</label>
+                <select name="project" id="">
+                  <option value="SALARIE_PRIVE">Salarié du secteur privé</option>
+                  <option value="SALARIE_PUBLIC">Fonctionnaire</option>
+                  <option value="PROFESSION_LIBERALE">Profession libérale</option>
+                  <option value="COMMERCANT">Commerçant</option>
+                  <option value="ARTISAN">Artisan</option>
+                  <option value="RETRAITE">Retraité</option>
+                  <option value="AUTRE">Autres professions</option>
+                </select>
+              </div>
+
+              <div class="item">
+                <label class="label">Montant (en DH)</label>
+                <div>
+                  <input type="number" step="any" name="amount" class="form-control simulator_range_input" value="10000">
+                </div>
+                <input type="range" min="5000" max="600000" step="1000" class="form-control no-range simulator_range_range" value="10000">
+                <small>
+                  "5000"
+                  -
+                  "600000"
+                </small>
+              </div>
+
+              <div class="item">
+                <label class="label">Durée (en mois)</label>
+                <div>
+                  <input type="number" step="any" name="duration" class="form-control simulator_range_input" value="24">
+                </div>
+                <input type="range" min="12" max="120" step="6" class="form-control no-range simulator_range_range" value="24">
+                <small>
+                  "12"
+                  -
+                  "120"
+                </small>
+              </div>
+
+              <div class="item">
+                <label class="label">Mensualités (en DH)</label>
+                  <div>
+                    <input type="number" step="any" name="monthly" class="form-control simulator_range_input" value="234.7">
+                  </div>
+                  <input type="range" min="70.91" max="450.34" step="1" class="form-control no-range simulator_range_range" value="234.7">
+                <small>
+                  "70.91"
+                  -
+                  "450.34"
+                </small>
+              </div>
+
+            </div>
+
+            <div class="btn_box">
+              <div class="btn">
+                <span>
+                  Continuer
+                  <small>Sans engagement</small>
+                </span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="copy_right">
+            <p>
+              Simulation à titre indicatif et non contractuelle. La mensualité minimale est de 180 dirhams. Un client Wafasalaf peut bénéficier d'une tarification plus avantageuse en fonction de ses conditions préférentielles.
+            </p>
+            <p>
+              Conformément à la loi 09-08, vous disposez d’un droit d’accès, de rectification et d’opposition au traitement de vos données personnelles. Ce traitement est autorisé par la CNDP sous le numéro A-GC-206/2014.
+            </p>
+          </div>
+        </div>
+        <div class="recap">
+          <h2>Mon récapitulatif</h2>
+          <table class="recap_table">
+            <thead>
+              <tr>
+                <td class="th">Mon projet</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tb"><strong>Prêt Personnel</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
